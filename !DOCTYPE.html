@@ -822,50 +822,65 @@
 
     .vflow-step {
       background: #FFFFFF;
-      border-radius: 9px;
-      padding: 4px 12px;
-      box-shadow: 0 1.5px 4px rgba(15, 23, 42, 0.04);
+      border: 1.5px solid #475569;
+      border-radius: 5px;
+      padding: 4.5px 12px;
       position: relative;
     }
 
-    .vflow-step.s-blue { border: 1.5px solid #1D4ED8; }
-    .vflow-step.s-gold { border: 1.5px solid #D97706; }
-    .vflow-step.s-teal { border: 1.5px solid #0D9488; }
-    .vflow-step.s-coral { border: 1.5px solid #E11D48; }
-    .vflow-step.s-navy { border: 1.5px solid #1E293B; }
-    .vflow-step.s-formula-pink { border: 1.5px solid #E11D48; background: #FFFBFB; }
-    .vflow-step.s-cyan { border: 1.5px solid #0284C7; }
-    .vflow-step.s-formula-teal { border: 1.5px solid #0D9488; background: #F8FEFC; }
-    .vflow-step.s-formula-orange { border: 1.5px solid #EA580C; background: #FFFDF9; }
-    .vflow-step.s-purple { border: 1.5px solid #10B981; background: #F0FDF4; }
-    .vflow-step.s-emerald { border: 1.5px solid #059669; background: #F0FDF4; }
+    .vflow-step.s-blue,
+    .vflow-step.s-gold,
+    .vflow-step.s-teal,
+    .vflow-step.s-coral,
+    .vflow-step.s-navy,
+    .vflow-step.s-cyan,
+    .vflow-step.s-purple,
+    .vflow-step.s-emerald {
+      border: 1.5px solid #475569;
+      background: #FFFFFF;
+    }
+
+    .vflow-step.s-formula-pink,
+    .vflow-step.s-formula-teal,
+    .vflow-step.s-formula-orange {
+      border: 1.5px solid #475569;
+      background: #F8FAFC;
+    }
 
     .vflow-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     .vflow-badge {
-      font-size: 11.2px;
+      font-size: 10.8px;
       font-weight: 800;
-      padding: 2px 7px;
-      border-radius: 4px;
-      letter-spacing: 0.3px;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      letter-spacing: 0.4px;
       text-transform: uppercase;
+      background: #ECFDF5;
+      color: #064E3B;
+      border: 1px solid #A7F3D0;
     }
 
-    .badge-blue { background: #1D4ED8; color: #FFFFFF; font-weight: 800; }
-    .badge-teal { background: #0D9488; color: #FFFFFF; font-weight: 800; }
-    .badge-coral { background: #FFE4E6; color: #BE123C; font-weight: 800; border: 1px solid #FECDD3; }
-    .badge-cyan { background: #0284C7; color: #FFFFFF; font-weight: 800; }
-    .badge-emerald { background: #059669; color: #FFFFFF; font-weight: 800; }
+    .badge-blue,
+    .badge-teal,
+    .badge-coral,
+    .badge-cyan,
+    .badge-emerald {
+      background: #ECFDF5;
+      color: #064E3B;
+      border: 1px solid #A7F3D0;
+      font-weight: 800;
+    }
 
     .vflow-tag {
       font-size: 11.5px;
-      font-weight: 800;
-      color: #0F766E;
+      font-weight: 700;
+      color: #334155;
     }
 
     .vflow-title {
@@ -915,53 +930,44 @@
     }
 
     .vflow-subbox.sub-teal {
-      background: #F0FDF4;
-      border: 1.5px solid #86EFAC;
-      color: #14532D;
+      background: #ECFDF5;
+      border: 1px solid #6EE7B7;
+      color: #064E3B;
     }
 
     .vflow-subbox.sub-gold {
-      background: #FFFBEB;
-      border: 1.5px solid #FDE68A;
-      color: #78350F;
+      background: #F8FAFC;
+      border: 1px solid #94A3B8;
+      color: #1E293B;
     }
 
     .vflow-subtag {
       display: inline-block;
       margin-top: 3px;
       font-size: 12.5px;
-      font-weight: 800;
-      color: #0369A1;
-      background: #E0F2FE;
-      padding: 2px 7px;
-      border-radius: 4px;
+      font-weight: 700;
+      color: #064E3B;
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      padding: 1.5px 7px;
+      border-radius: 3px;
     }
 
     .vflow-formula {
-      border-radius: 6px;
-      padding: 4px 8px;
+      border-radius: 4px;
+      padding: 3.5px 8px;
       font-size: 13px;
-      font-weight: 800;
+      font-weight: 700;
       margin-top: 3px;
       font-family: 'Inter', monospace;
     }
 
-    .vflow-formula.f-pink {
-      background: #FFF1F2;
-      border: 1px solid #FECDD3;
-      color: #BE123C;
-    }
-
-    .vflow-formula.f-teal {
-      background: #F0FDFA;
-      border: 1px solid #99F6E4;
-      color: #0F766E;
-    }
-
+    .vflow-formula.f-pink,
+    .vflow-formula.f-teal,
     .vflow-formula.f-orange {
-      background: #FFFBEB;
-      border: 1px solid #FDE68A;
-      color: #B45309;
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #064E3B;
     }
 
     .vflow-arrow {
@@ -1121,7 +1127,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 2: Serum Vitamin D Levels -->
@@ -1141,7 +1147,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 3: Baseline Cortisol & BP -->
@@ -1157,7 +1163,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 4: Mental Stressor (MAT) -->
@@ -1170,7 +1176,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 5: Estimation of SBP & HR (T1) -->
@@ -1180,7 +1186,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 6: CVS Reactivity to MAT -->
@@ -1193,7 +1199,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 7: Physical Stressor (CPT) -->
@@ -1207,7 +1213,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 8: CVS Reactivity to CPT -->
@@ -1220,7 +1226,7 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 9: Serum Cortisol Level Remeasured -->
@@ -1233,19 +1239,17 @@
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 10: Recovery Period -->
             <div class="vflow-step s-purple">
-              <div class="vflow-title" style="display:flex; align-items:center; gap:6px;">
-                <span>⏱️</span> Recovery Period of 5–10 Minutes
-              </div>
+              <div class="vflow-title">Recovery Period of 5–10 Minutes</div>
               <div class="vflow-desc">Autonomic stabilization &amp; rest prior to self-report psychometrics</div>
             </div>
 
             <div class="vflow-arrow">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#334155" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"></line><polyline points="19 14 12 21 5 14"></polyline></svg>
             </div>
 
             <!-- STEP 11: Psychometric Assessment -->
