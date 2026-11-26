@@ -1,0 +1,16 @@
+# Ignore temporary screenshots and debug/verification scripts
+*.png
+temp_*
+uninstall_mysql.bat
+check_*.js
+crop_*.js
+inspect_*
+measure_*.js
+redesign_*.js
+refine_*.js
+replace_*.js
+take_screenshot.js
+verify_*.py
+find_rect.js
+test_*.js
+zoom_*.js
