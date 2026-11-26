@@ -12,12 +12,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <style>
     :root {
-      --primary: #4E101D; /* Rich Academic Burgundy / Wine */
-      --primary-light: #6E1A29;
-      --primary-dark: #32080F;
-      --navy: #4E101D; /* Replaced navy variable globally */
-      --navy-light: #6E1A29;
-      --navy-dark: #32080F;
+      --primary: #064E3B; /* Deep Forest Green */
+      --primary-light: #065F46;
+      --primary-dark: #022C22;
+      --navy: #064E3B; /* Replaced primary dark accent */
+      --navy-light: #065F46;
+      --navy-dark: #022C22;
       --teal: #028090;
       --teal-light: #F0FDFA;
       --teal-dark: #0D5C63;
@@ -28,8 +28,8 @@
       --slate: #1E293B;
       --muted: #475569;
       --card-bg: #FFFFFF;
-      --poster-bg: #FAF9F6; /* Warm academic off-white */
-      --border: #E5E7EB;
+      --poster-bg: #ECFDF5; /* Soft light green base background */
+      --border: #D1FAE5;
     }
 
     * {
@@ -53,8 +53,8 @@
       position: sticky;
       top: 10px;
       z-index: 1000;
-      background: #3D0C17;
-      border: 1.5px solid #D97706;
+      background: #DCFCE7;
+      border: 1.5px solid #10B981;
       padding: 10px 24px;
       border-radius: 40px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
@@ -94,8 +94,8 @@
 
     /* 1. TOP HEADER BANNER */
     .title-banner {
-      background: linear-gradient(135deg, #3D0C17 0%, #5C1423 60%, #4A0E1C 100%);
-      color: #FFFFFF;
+      background: linear-gradient(135deg, #DCFCE7 0%, #D1FAE5 60%, #ECFDF5 100%);
+      color: #064E3B;
       padding: 18px 40px;
       border-bottom: 6px solid var(--teal);
       display: flex;
@@ -134,19 +134,19 @@
       font-weight: 900;
       line-height: 1.25;
       letter-spacing: -0.3px;
-      color: #FFFFFF;
+      color: #064E3B;
     }
 
     .poster-title span.highlight-gold {
-      color: #FBBF24;
+      color: #B45309;
     }
 
     .poster-title span.highlight-teal {
-      color: #2DD4BF;
+      color: #0F766E;
     }
 
     .poster-title span.highlight-coral {
-      color: #FB7185;
+      color: #BE123C;
     }
 
     /* 2. AUTHOR DETAILS BAR */
@@ -217,8 +217,9 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: var(--navy);
-      color: #FFFFFF;
+      background: #D1FAE5;
+      color: #064E3B;
+      border: 1.5px solid #34D399;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -226,7 +227,7 @@
       font-weight: 900;
       font-size: 18px;
       flex-shrink: 0;
-      box-shadow: 0 3px 6px rgba(11, 37, 69, 0.25);
+      box-shadow: 0 3px 6px rgba(6, 78, 59, 0.14);
     }
 
     .card-title-group h2 {
@@ -284,13 +285,13 @@
     }
 
     .novelty-box {
-      background: linear-gradient(135deg, #420C18 0%, #5E1424 100%);
-      color: #FFFFFF;
+      background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+      color: #064E3B;
       border-radius: 10px;
       padding: 11px 16px;
       font-size: 13.2px;
       line-height: 1.48;
-      border-left: 5px solid #F59E0B;
+      border-left: 5px solid #059669;
     }
 
     /* Card 2: Cohort & Protocol */
@@ -442,13 +443,13 @@
 
     .heat-table th,
     .paired-table th {
-      background: var(--navy);
-      color: #FFFFFF;
+      background: #D1FAE5;
+      color: #064E3B;
       padding: 5.5px 8px;
       font-size: 12.8px;
       font-weight: 800;
       text-align: center;
-      border: 1px solid #3B0913;
+      border: 1px solid #6EE7B7;
     }
 
     .heat-table td,
@@ -590,7 +591,7 @@
     }
 
     .h-synthesis-box {
-      background: linear-gradient(135deg, #06152B 0%, #4E101D 100%);
+      background: linear-gradient(135deg, #06152B 0%, #064E3B 100%);
       border: 1.5px solid #3B82F6;
       border-radius: 10px;
       padding: 12px 18px;
@@ -1273,7 +1274,7 @@
               <h2>Results &amp; Empirical Findings</h2>
               <span>Statistically Significant Endocrine–Psychological–Autonomic Coupling (SPSS v29)</span>
             </div>
-            <div style="margin-left:auto; background:#5C1423; border: 1px solid #781E30; color:#FFF; font-size:11px; font-weight:800; padding:4px 10px; border-radius:6px;">
+            <div style="margin-left:auto; background:#DCFCE7; border: 1px solid #6EE7B7; color:#064E3B; font-size:11px; font-weight:800; padding:4px 10px; border-radius:6px;">
               <span>IBM SPSS 29 Analyzed</span>
             </div>
           </div>
@@ -1314,22 +1315,22 @@
                 <line x1="38" y1="134" x2="275" y2="134" stroke="#E2E8F0" stroke-width="1" />
                 <line x1="38" y1="172" x2="275" y2="172" stroke="#E2E8F0" stroke-width="1" />
                 <!-- Axes -->
-                <line x1="38" y1="15" x2="38" y2="185" stroke="#4E101D" stroke-width="2" />
-                <line x1="38" y1="185" x2="275" y2="185" stroke="#4E101D" stroke-width="2" />
+                <line x1="38" y1="15" x2="38" y2="185" stroke="#064E3B" stroke-width="2" />
+                <line x1="38" y1="185" x2="275" y2="185" stroke="#064E3B" stroke-width="2" />
                 <!-- Y-axis labels -->
                 <text x="32" y="24" font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">150</text>
                 <text x="32" y="62" font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">140</text>
                 <text x="32" y="100" font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">130</text>
                 <text x="32" y="138" font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">120</text>
                 <text x="32" y="176" font-size="11.5" font-weight="700" fill="#334155" text-anchor="end">110</text>
-                <text x="12" y="100" font-size="13" font-weight="800" fill="#4E101D" transform="rotate(-90 12,100)"
+                <text x="12" y="100" font-size="13" font-weight="800" fill="#064E3B" transform="rotate(-90 12,100)"
                   text-anchor="middle">Emotional Intelligence</text>
                 <!-- X-axis labels -->
                 <text x="40" y="202" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">.00</text>
                 <text x="115" y="202" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">20.00</text>
                 <text x="190" y="202" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">40.00</text>
                 <text x="265" y="202" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">60.00</text>
-                <text x="155" y="222" font-size="13.5" font-weight="800" fill="#4E101D" text-anchor="middle">Serum Vitamin D (ng/mL)</text>
+                <text x="155" y="222" font-size="13.5" font-weight="800" fill="#064E3B" text-anchor="middle">Serum Vitamin D (ng/mL)</text>
 
                 <!-- Data Points Grouped Exactly by SPSS Legend -->
                 <!-- 1. Severe deficiency (<10 ng/mL, Blue dots) -->
@@ -1398,34 +1399,34 @@
             <div class="chart-box">
               <h4>Figure 2: Graded Trait EI Rise Across Serum 25(OH)D₃ Tiers (ANOVA F = 58.45, p &lt; 0.001*)</h4>
               <svg width="100%" height="245" viewBox="0 0 360 235">
-                <line x1="38" y1="195" x2="345" y2="195" stroke="#4E101D" stroke-width="2" />
+                <line x1="38" y1="195" x2="345" y2="195" stroke="#064E3B" stroke-width="2" />
                 <!-- Bar 1: Severe Def -->
                 <rect x="52" y="125" width="54" height="70" rx="6" fill="#E11D48" />
                 <text x="79" y="117" font-size="13" font-weight="800" fill="#BE123C" text-anchor="middle">119.8±7.2</text>
-                <text x="79" y="212" font-size="11.8" font-weight="800" fill="#4E101D" text-anchor="middle">Severe Def.</text>
+                <text x="79" y="212" font-size="11.8" font-weight="800" fill="#064E3B" text-anchor="middle">Severe Def.</text>
                 <text x="79" y="226" font-size="10.8" font-weight="700" fill="#64748B" text-anchor="middle">(n=27)</text>
 
                 <!-- Bar 2: Deficiency -->
                 <rect x="124" y="100" width="54" height="95" rx="6" fill="#D97706" />
                 <text x="151" y="92" font-size="13" font-weight="800" fill="#B45309" text-anchor="middle">128.3±7.4</text>
-                <text x="151" y="212" font-size="11.8" font-weight="800" fill="#4E101D" text-anchor="middle">Deficiency</text>
+                <text x="151" y="212" font-size="11.8" font-weight="800" fill="#064E3B" text-anchor="middle">Deficiency</text>
                 <text x="151" y="226" font-size="10.8" font-weight="700" fill="#64748B" text-anchor="middle">(n=27)</text>
 
                 <!-- Bar 3: Insufficiency -->
                 <rect x="196" y="78" width="54" height="117" rx="6" fill="#10B981" />
                 <text x="223" y="70" font-size="13" font-weight="800" fill="#047857" text-anchor="middle">136.0±1.4</text>
-                <text x="223" y="212" font-size="11.5" font-weight="800" fill="#4E101D" text-anchor="middle">Insufficiency</text>
+                <text x="223" y="212" font-size="11.5" font-weight="800" fill="#064E3B" text-anchor="middle">Insufficiency</text>
                 <text x="223" y="226" font-size="10.8" font-weight="700" fill="#64748B" text-anchor="middle">(n=2)</text>
 
                 <!-- Bar 4: Sufficiency -->
                 <rect x="268" y="54" width="54" height="141" rx="6" fill="#00A896" />
                 <text x="295" y="46" font-size="13" font-weight="800" fill="#0F766E" text-anchor="middle">144.1±6.6*</text>
-                <text x="295" y="212" font-size="11.8" font-weight="800" fill="#4E101D" text-anchor="middle">Sufficiency</text>
+                <text x="295" y="212" font-size="11.8" font-weight="800" fill="#064E3B" text-anchor="middle">Sufficiency</text>
                 <text x="295" y="226" font-size="10.8" font-weight="700" fill="#64748B" text-anchor="middle">(n=29, 34.1%)</text>
 
                 <!-- Post-Hoc Significance Bracket (Moved higher to y=20 so it never overlaps bar 4 label at y=46) -->
-                <path d="M 79 26 L 79 18 L 295 18 L 295 26" stroke="#4E101D" stroke-width="1.6" fill="none" />
-                <text x="187" y="14" font-size="11.8" font-weight="800" fill="#4E101D" text-anchor="middle">Games-Howell Post-Hoc p &lt; 0.001*</text>
+                <path d="M 79 26 L 79 18 L 295 18 L 295 26" stroke="#064E3B" stroke-width="1.6" fill="none" />
+                <text x="187" y="14" font-size="11.8" font-weight="800" fill="#064E3B" text-anchor="middle">Games-Howell Post-Hoc p &lt; 0.001*</text>
               </svg>
             </div>
           </div>
@@ -1502,7 +1503,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td rowspan="2" style="font-weight:800; color:#4E101D; background:#FEF9C3; text-align:left;">Serum 25(OH)D₃</td>
+                  <td rowspan="2" style="font-weight:800; color:#064E3B; background:#FEF9C3; text-align:left;">Serum 25(OH)D₃</td>
                   <td style="font-size:11px;">Pearson Correlation (r)</td>
                   <td style="background:#F0FDFA; color:#0F766E; font-weight:800;">+0.787*</td>
                   <td style="background:#FFE4E6; color:#BE123C; font-weight:800;">-0.701*</td>
@@ -1519,7 +1520,7 @@
                   <td style="color:#9F1239; font-weight:800;">&lt; 0.001</td>
                 </tr>
                 <tr style="border-top:2px solid #CBD5E1;">
-                  <td rowspan="2" style="font-weight:800; color:#4E101D; background:#E0F2FE; text-align:left;">Trait EI (SSEIT)</td>
+                  <td rowspan="2" style="font-weight:800; color:#064E3B; background:#E0F2FE; text-align:left;">Trait EI (SSEIT)</td>
                   <td style="font-size:11px;">Pearson Correlation (r)</td>
                   <td style="color:#64748B;">—</td>
                   <td style="background:#FFE4E6; color:#BE123C; font-weight:800;">-0.554*</td>
